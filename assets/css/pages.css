@@ -1,0 +1,291 @@
+/*-----------------------------------*\
+ * style.css
+\*-----------------------------------*/
+/**
+ * css since 2023 by huda
+ */
+/* Base CSS */
+:root {
+  --navbar-bg-color: hsl(0, 0%, 15%);
+  --navbar-text-color: hsl(0, 0%, 85%);
+  --navbar-text-color-focus: white;
+  --navbar-bg-contrast: hsl(0, 0%, 25%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-family: Raleway, sans-serif;
+}
+
+hr {
+  padding: 0 10%;
+  border-top: 1px dashed rgb(147, 145, 145);
+}
+
+/* Navbar */
+
+.navbar {
+  /* background-color: #f0f0f0; */
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 15px;
+}
+
+.navbar .card a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  transition:all .3s;
+}
+
+.navbar .card a:hover {
+  color: #7BD3EA;
+  background: transparent;
+  text-shadow: 3px 3px 5px grey;
+}
+
+.navbar .card h4 {
+  color: #666666;
+}
+
+/* Tampilan mobile */
+@media only screen and (max-width: 600px) {
+
+  .navbar {
+    padding: 10px 0 5px;
+  }
+
+  .navbar .card a {
+    font-size: 18px;
+  }
+
+  .navbar .card h4 {
+    font-size: 10px;
+  }
+}
+
+/* Banner atau Background */
+
+.banner img {
+  width: 100%;
+  padding: 20px 10% 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner img {
+    padding: 20px 5% 20px;
+  }
+}
+
+/* Container Proker dan Anggota */
+
+/* Program Kerja */
+
+.container {
+  padding: 0 15% 0;
+  margin: 50px auto 30px;
+}
+
+.container .proker {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.container .proker h1 {
+  font-size: 45px;
+}
+
+.container .proker .card-proker {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 30px;
+}
+
+.container .proker .card-proker .itemProker p {
+  padding-left: 10px;
+  margin-top: 10px;
+  color: black;
+  font-size: 23px;
+}
+
+.container .proker .card-proker .itemProker h1 {
+  padding: 5px 20px;
+  font-size: 30px;
+  background-color: #F4F27E;
+  width: fit-content;
+  border-radius: 8px;
+  background: #FFF5C2;
+  box-shadow: 12px 12px 20px #c5cac6,
+    -12px -12px 20x #fbfffc;
+  border: solid 2px grey;
+}
+
+/* Responsive Proker */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 auto 30px;
+    padding: 0 6% 0;
+  }
+
+  .container .proker h1 {
+    font-size: 30px;
+  }
+
+  .container .proker .card-proker {
+    padding: 0 3%;
+  }
+
+  .container .proker .card-proker .itemProker h1 {
+    font-size: 20px;
+    padding: 3px 15px;
+  }
+
+  .container .proker .card-proker .itemProker p {
+    font-size: 18px;
+  }
+}
+
+/* Anggota */
+
+.container .anggota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.container .anggota .card-anggota {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.container .anggota .card-anggota .itemAnggota {
+  text-align: center;
+  margin: 0 30px;
+}
+
+.container .anggota .card-anggota .itemAnggota h3 {
+  font-size: 35px;
+}
+
+.container .anggota .card-anggota .itemAnggota h6 {
+  font-size: 20px;
+  color: #666666;
+}
+
+.card-anggota .itemAnggota img {
+  width: 400px;
+}
+
+/* Responsive Anggota */
+
+@media only screen and (max-width: 600px) {
+  .container .anggota h1 {
+    font-size: 30px;
+  }
+
+  .card-anggota .itemAnggota img {
+    width: 300px;
+  }
+
+  .container .anggota .card-anggota {
+    gap: 30px;
+    margin: 0 10px;
+  }
+
+  .container .anggota .card-anggota .itemAnggota h3 {
+    font-size: 27px;
+  }
+
+  .container .anggota .card-anggota .itemAnggota h6 {
+    font-size: 18px;
+  }
+}
+
+/*-----------------------------------*\
+ * #footer
+/* \*-----------------------------------* */
+
+
+footer {
+  margin-top: auto;
+  /* Menempatkan footer di paling bawah */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  background-color: #f0f0f0;
+  padding: 20px 0 25px;
+}
+
+.item {
+  margin-right: 10px;
+  /* Mengatur jarak kanan antara elemen-elemen */
+}
+
+p {
+  text-align: left;
+  color: #555555;
+  margin: 0;
+  /* Menghapus margin bawah pada tulisan */
+  font-size: 30px;
+}
+
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-media a {
+  margin: 0 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 35px;
+  /* Sesuaikan ukuran ikon sosial media */
+  height: 35px;
+  /* Sesuaikan ukuran ikon sosial media */
+}
+
+/* Media Query untuk layar dengan lebar kurang dari atau sama dengan 600px */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 10px 0 30px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .social-media img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+
+  .social-media {
+    margin-top: 15px;
+  }
+}
